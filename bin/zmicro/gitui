@@ -1,0 +1,17 @@
+#!/bin/bash
+
+help() {
+  echo "Usage:"
+  echo "  zmicro gitui <args ...>"
+  echo ""
+}
+
+core() {
+  gitui "$@"
+}
+
+run() {
+  core "$@"
+}
+
+run "$@"
